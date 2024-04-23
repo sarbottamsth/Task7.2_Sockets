@@ -7,7 +7,7 @@ $(document).ready(function () {
     })
     addCards(cardList);
 });
-// const cardList = [
+// let cardList = [
 //     {
 //         title: "Timex UFC Pro Automatic 45mm Silicone Strap Watch",
 //         image: "img/1.webp",
@@ -31,8 +31,8 @@ $(document).ready(function () {
 
 async function displayItems() {
     try {
-        const response = await fetch("/api/items");
-        const items = await response.json();
+        let response = await fetch("/api/items");
+        let items = await response.json();
 
         items.forEach(item => {
             let itemToAppend = '<div class="col s4 center-align">' +
@@ -52,12 +52,12 @@ async function displayItems() {
 
 displayItems();
 
-const clickMe = () => {
+let clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!")
 }
 
 
-// const addCards = (items) => {
+// let addCards = (items) => {
 //     items.forEach(item => {
 //         let itemToAppend = '<div class="col s4 center-align">' +
 //             '<div class="card"><div class="card-image"><img src="' + item.image + '">' +
