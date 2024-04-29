@@ -39,3 +39,8 @@
     position: relative;
     z-index: 1;
 }
+
+.card-image img {
+  height: 300px;
+  object-fit: contain;
+}

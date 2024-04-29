@@ -4,12 +4,16 @@
   "description": "Task 5.2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "author": "Sarbottam",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.4.0",
     "express": "^4.19.2",
-    "mongodb": "^6.5.0"
+    "mocha": "^10.4.0",
+    "mongodb": "^6.5.0",
+    "request": "^2.88.2"
   }
 }
