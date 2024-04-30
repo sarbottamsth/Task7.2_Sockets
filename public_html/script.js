@@ -5,7 +5,6 @@ $(document).ready(function () {
     $('#clickMeButton').click(() => {
         clickMe();
     })
-    addCards(cardList);
 });
 
 async function displayItems() {
